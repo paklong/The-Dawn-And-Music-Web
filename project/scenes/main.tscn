@@ -1,0 +1,30 @@
+[gd_scene load_steps=7 format=3 uid="uid://7v1311y2cdd0"]
+
+[ext_resource type="PackedScene" uid="uid://ucjqkxaf115i" path="res://scenes/human.tscn" id="1_65wh0"]
+[ext_resource type="PackedScene" uid="uid://cq6nj8ktiej8i" path="res://scenes/canvas_layer.tscn" id="1_k5dpk"]
+[ext_resource type="PackedScene" uid="uid://cydirwddms2r0" path="res://scenes/cat.tscn" id="1_krbb6"]
+[ext_resource type="PackedScene" uid="uid://c3plrv6vvj154" path="res://scenes/capybara.tscn" id="2_0j1fy"]
+[ext_resource type="PackedScene" uid="uid://dahthcsljrf84" path="res://scenes/audio_stream_player_2d.tscn" id="2_568k7"]
+[ext_resource type="PackedScene" uid="uid://p85ses7ibep" path="res://scenes/dog.tscn" id="3_sbgyl"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Human" parent="." instance=ExtResource("1_65wh0")]
+position = Vector2(1290, 800)
+scale = Vector2(3.4, 3.4)
+
+[node name="Cat" parent="." instance=ExtResource("1_krbb6")]
+position = Vector2(690, 940)
+scale = Vector2(3, 3)
+
+[node name="Dog" parent="." instance=ExtResource("3_sbgyl")]
+position = Vector2(990, 920)
+scale = Vector2(3, 3)
+
+[node name="Capybara" parent="." instance=ExtResource("2_0j1fy")]
+visible = false
+position = Vector2(1251, 959)
+
+[node name="CanvasLayer" parent="." instance=ExtResource("1_k5dpk")]
+
+[node name="AudioStreamPlayer2D" parent="." instance=ExtResource("2_568k7")]

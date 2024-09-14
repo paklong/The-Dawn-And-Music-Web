@@ -1,0 +1,35 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="The Dawn and Music"
+run/main_scene="res://scenes/main.tscn"
+config/features=PackedStringArray("4.3", "Forward Plus")
+boot_splash/image="res://Icon1.png"
+boot_splash/fullsize=false
+config/icon="res://assets/background/The Dawn/Reference-Image.png"
+
+[display]
+
+window/size/viewport_width=1980
+window/size/viewport_height=1080
+window/stretch/mode="canvas_items"
+
+[editor]
+
+movie_writer/mjpeg_quality=0.5
+movie_writer/movie_file="C:/Users/paklo/Documents/Export Movie/the_dwan_and_music.avi"
+movie_writer/disable_vsync=true
+movie_writer/fps=30
+
+[rendering]
+
+textures/vram_compression/import_etc2_astc=true
